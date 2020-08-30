@@ -1,0 +1,164 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+\documentclass[letterpaper,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Jibben Hillen}
+\newcommand{\CVTitle}{Jibben Hillen Resume}
+\newcommand{\CVWebpage}{http://www.jibbenhillen.com/}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+pdfsubject={\CVWebpage},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{mailto:jibbenh@gmail.com}
+{jibbenh@gmail.com }
+\,\SubBulletSymbol\,
++1\,(413)\,230-0197
+\,\SubBulletSymbol\,
+\href{\CVWebpage}
+{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%
+%% EXPERIENCE %%
+%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:Experience}
+
+\Entry
+\SubSection{Cue}{San Francisco, CA}{PDF:Cue}
+\hfill \textit{\DatestampYM{2019}{07} -- Current}
+\SmallGap
+\begin{Position}\underline{Backend Lead, Senior Software Engineer}\end{Position}
+\Gap
+\begin{Detail} \href{https://www.cue.app}{Cue}, a Series-A startup backed by Index Ventures and Khosla Ventures, aims to reinvent the mobile calendar.
+\end{Detail}
+\SmallGap
+\BulletItem Led backend team in technical decisions, system design, and engineering priorities
+\BulletItem Synthesized high-level product direction into manageable technical projects and roadmaps
+\BulletItem Jointly coordinated planning and end-to-end implementation of new features with iOS engineers, such as:
+\SubBulletItem Platform to create, share, discover, and join public calendars for interests and communities
+\SubBulletItem Fully featued in-app chat system, including group chats, read states, reactions, and multimedia messages
+\BulletItem Personally sourced, screened, and interviewed dozens of candidates, resulting in several hires
+\BulletItem Onboarded and mentored all incoming backend engineers, enabling quick ramp-up times
+\BulletItem Orchestrated all DevOps: e.g. monitoring with Prometheus, container builds, Kubernetes deployments
+\BulletItem Managed existing and designed new Golang backend architecture and infrastructure, including:
+\SubBulletItem Large-scale real-time distributed client-server syncing infrastructure with streaming gRPC
+\SubBulletItem API integrations and data pipelines to aggregate content across wide variety of sources
+\SubBulletItem Asynchronous work system with scheduling capabilities and completion guarantees
+\SubBulletItem Google Calendar integration supporting real-time push and pull syncs of calendar data
+\SubBulletItem Two-way SMS-relayed group chats through Twilio as a user growth lever
+\BigGap
+
+\Entry
+\SubSection{Google}{San Francisco, CA}{PDF:Google}
+\hfill \textit{\DatestampYM{2017}{07} -- \DatestampYM{2019}{07}}
+\SmallGap
+\begin{Position}\underline{Software Engineer}, Tailor\end{Position}
+\hfill \textit{\DatestampYM{2018}{06} -- \DatestampYM{2019}{07}}
+\Gap
+\begin{Detail} Tailor, a startup within Google's internal accelerator, \href{http://area120.google.com}{Area 120}, connected users with fashion stylists and increased the efficiency of stylist-user connections with machine learning and clever technology.
+\end{Detail}
+\SmallGap
+\BulletItem Spearheaded automatic content generation, increasing purchases and revenue by 25\% at zero marginal cost
+\SubBulletItem Created several batch pipelines to mine user tastes and recommend matching products
+\SubBulletItem Constructed infrastructure to gracefully decouple creation and delivery of automated content, allowing for many sources to cleanly push to several destinations without repetition 
+\BulletItem Designed and implemented framework to generate content for users in reaction to in-app actions. Initial use-case, suggesting items based on sign-up flow, increased first-week messages by 32\% and first-week purchases by 12\%
+\BulletItem Set up experiment configurations and performed statistical data analysis on results across project, driving strategic decision making and opportunity planning
+\BulletItem Gained C++ readability approval permissions faster than 90\% of Googlers, despite having no prior experience
+
+\Gap
+\begin{Position}\underline{Software Engineer}, Android\end{Position}
+\hfill \textit{\DatestampYM{2017}{07} -- \DatestampYM{2018}{06}}
+\SmallGap
+\BulletItem Created automatic triaging system for Android battery bugs, allowing dogfood users to better self-diagnose problems and saving hundreds of engineering hours
+\BulletItem Developed cluster analysis of battery metrics, identifying issues with new Android releases
+
+\BigGap
+\Entry
+\SubSection{Squarespace}{New York, NY}{PDF:Squarespace}
+\hfill \textit{\DatestampYM{2016}{05} -- \DatestampYM{2016}{12}}
+\SmallGap
+\begin{Position}\underline{Engineering Intern}, Machine Learning Team\end{Position}
+\SmallGap
+\BulletItem Utilized deep learning and other ML techniques to create semantic and visual website search engine for internal use, enabling better discovery for design, advertising, customer service, and more
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+\SubSection{Columbia University}{School of Engineering and Applied Science, New York, NY}{PDF:University}
+\hfill \textit{\DatestampYM{2017}{05}}
+
+\SmallGap
+\underline{Bachelor of Science, Computer Science}
+\SmallGap
+\BulletItem
+Minor in Operations Research
+\BulletItem
+\textbf{GPA}: 3.83 / 4, Dean's List
+\SmallGap
+\textit{Selected coursework}: NLP, Statistical ML, Deep Learning for Computer Vision, Information Retrieval
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\BulletItem
+Go, C++, C, Python, SQL, Pandas, Numpy, R, Bash, git, {\LaTeX}, \textit{excels at learning new languages}
+\BulletItem
+gRPC, protobuf, Docker, Kubernetes, Redis, postgres, MySQL, NoSQL, GCP, Tensorflow, pub-sub
+\BulletItem
+System Design, DBs, Batch Processing, Machine Learning, Feature Planning, Intelligent Systems
+\end{Body}
+\end{document}
