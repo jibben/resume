@@ -1,1 +1,4 @@
-#Jibben Hillen's Resume
+Jibben's Resume
+===============
+
+Compile with `xelatex`
